@@ -112,21 +112,6 @@ Remove-ItemProperty -Path "HKLM:\SYSTEM\CurrentControlSet\Services\Tcpip6\Parame
 
 删除注册表值后重启，回到出厂状态。
 
-## 上传到 GitHub
-
-```bash
-cd "D:\Users\XOS\Documents\GitHub\ipv6-switch"
-git init
-git add .
-git commit -m "feat: interactive IPv6 on/off switch for Windows"
-git remote add origin git@github.com:<用户名>/<仓库名>.git
-git branch -M main
-git push -u origin main
-```
-
-> 本机 hosts 被 Steam++ 劫持，直连 GitHub 常报 `CRYPT_E_NO_REVOCATION_CHECK (0x80092012)`。
-> 推之前先 `unset http_proxy https_proxy HTTP_PROXY HTTPS_PROXY all_proxy ALL_PROXY`，再 `GIT_SSL_NO_VERIFY=true git push`。
-
 ## 许可
 
 随意使用、随意改。
